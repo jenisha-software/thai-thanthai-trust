@@ -4411,17 +4411,44 @@ html {
     line-height: 1.7;
 }
 
+
 @media (max-width: 600px) {
     .trust-leadership {
-        padding: 50px 0;
+        padding: 40px 16px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .trust-leadership .trust-details-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .trust-leader-list {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .trust-leader-row {
-        grid-template-columns: 35px 1fr;
+        grid-template-columns: 35px minmax(0, 1fr);
         gap: 12px;
         padding: 19px 5px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .trust-leader-row > div:last-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
 }
+
 
 /* PARTNERS & SUPPORTERS */
 .trust-partners {
@@ -5071,4 +5098,36 @@ html {
     background: #b08a42;
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+/* About page - Trust leaders mobile layout */
+@media (max-width: 600px) {
+    .trust-leader-list {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .trust-leader-row {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 12px;
+        align-items: start;
+        overflow-wrap: anywhere;
+    }
+
+    .trust-leader-row > div:last-child {
+        min-width: 0;
+    }
+
+    .trust-leader-row strong,
+    .trust-leader-row span {
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
 }
