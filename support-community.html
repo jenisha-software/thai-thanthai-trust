@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
 
@@ -446,22 +447,33 @@
                 Thank you for supporting our community initiatives.
             </p>
 
-            <div class="payment-details">
+           
+<div class="payment-details">
 
-                <span>
-                    GPay / UPI
-                </span>
+    <span>ACCOUNT HOLDER NAME</span>
+    <strong>Balaraj</strong>
 
-                <strong>
-                    YOUR-UPI-ID-HERE
-                </strong>
+    <span>BANK ACCOUNT NUMBER</span>
+    <strong>123456789012</strong>
 
-            </div>
+    <span>IFSC CODE</span>
+    <strong>SBIN0000000</strong>
 
-            <p class="payment-note">
-                Replace the above demo UPI ID with the Trust's
-                actual GPay / UPI details.
-            </p>
+    <span>BANK NAME</span>
+    <strong>Sample Bank</strong>
+
+</div>
+
+<p class="payment-note">
+    To make a donation, please use the bank details
+    shown above to transfer your contribution through
+    your banking app or by visiting your bank.
+
+    Please verify the account holder name, account
+    number and IFSC code before making a transfer.
+    Thank you for supporting Thai Thanthai Trust.
+</p>
+
 
         </div>
 
@@ -524,12 +536,14 @@
     <script>
 
         function openDonation() {
+    const modal = document.getElementById("donationModal");
 
-            document
-                .getElementById("donationModal")
-                .classList.add("active");
-
-        }
+    if (modal) {
+        modal.classList.add("active");
+    } else {
+        alert("Donation popup not found!");
+    }
+}
 
 
         function closeDonation() {
@@ -555,7 +569,36 @@
             );
 
     </script>
+<!-- DONATION POPUP -->
 
+<div class="donation-modal" id="donationModal">
+    <div class="donation-box">
+        <button type="button" class="donation-close" onclick="closeDonation()">×</button>
+
+        <p class="section-label">SUPPORT THAI THANTHAI TRUST</p>
+        <h2>Make a Contribution</h2>
+        <p>Thank you for supporting our community initiatives.</p>
+
+        <div class="payment-details">
+            <span>ACCOUNT HOLDER NAME</span>
+            <strong>Balaraj</strong>
+
+            <span>BANK ACCOUNT NUMBER</span>
+            <strong>1669010000000030</strong>
+
+            <span>IFSC CODE</span>
+            <strong>KVBL0001669</strong>
+
+            <span>BANK NAME</span>
+            <strong>KARUR VYSYA BANK</strong>
+        </div>
+
+        <p class="payment-note">
+            Please use these bank details to transfer your donation.
+            Verify the details before making a transfer.
+        </p>
+    </div>
+</div>
 
 </body>
 

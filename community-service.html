@@ -374,20 +374,28 @@
                 Thank you for supporting our community initiatives.
             </p>
 
-            <div class="payment-details">
+           
+<div class="payment-details">
 
-                <span>GPay / UPI</span>
+    <span>ACCOUNT HOLDER NAME</span>
+    <strong>Balaraj</strong>
 
-                <strong>
-                    YOUR-UPI-ID-HERE
-                </strong>
+    <span>BANK ACCOUNT NUMBER</span>
+    <strong>1669010000000030</strong>
 
-            </div>
+    <span>IFSC CODE</span>
+    <strong>KVBL0001669</strong>
 
-            <p class="payment-note">
-                Replace the above demo UPI ID with the Trust's
-                actual GPay / UPI details.
-            </p>
+    <span>BANK NAME</span>
+    <strong>KARUR VYSYA BANK</strong>
+
+</div>
+
+<p class="payment-note">
+    Please use these bank details to transfer your donation.
+    Verify the details before making a transfer.
+</p>
+
 
         </div>
 
@@ -433,33 +441,40 @@
     </footer>
 
 
-    <!-- DONATION SCRIPT -->
+   <!-- DONATION SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("donationModal");
 
-    <script>
-
-        function openDonation() {
-            document
-                .getElementById("donationModal")
-                .classList.add("active");
+    window.openDonation = function () {
+        if (modal) {
+            modal.classList.add("active");
+            modal.style.display = "flex";
+            modal.style.opacity = "1";
+            modal.style.visibility = "visible";
+            modal.style.pointerEvents = "auto";
         }
+    };
 
-        function closeDonation() {
-            document
-                .getElementById("donationModal")
-                .classList.remove("active");
+    window.closeDonation = function () {
+        if (modal) {
+            modal.classList.remove("active");
+            modal.style.display = "";
+            modal.style.opacity = "";
+            modal.style.visibility = "";
+            modal.style.pointerEvents = "";
         }
+    };
 
-        document
-            .getElementById("donationModal")
-            .addEventListener("click", function (event) {
-
-                if (event.target === this) {
-                    closeDonation();
-                }
-
-            });
-
-    </script>
+    if (modal) {
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                window.closeDonation();
+            }
+        });
+    }
+});
+</script>
 
 
 </body>

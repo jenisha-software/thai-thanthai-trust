@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Causes | Thai Thanthai Trust</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .causes-page {
+            background: #fff;
+            color: #30241d;
+            font-family: Arial, sans-serif;
+        }
+
+        .causes-hero {
+            background: #f5f1eb;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .causes-hero .eyebrow {
+            color: #a17b40;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .causes-hero h1 {
+            font-size: clamp(34px, 5vw, 54px);
+            margin: 18px 0;
+        }
+
+        .causes-hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+            color: #71665c;
+        }
+
+        .causes-list {
+            max-width: 1150px;
+            margin: auto;
+            padding: 65px 24px;
+        }
+
+        .cause-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 48px;
+            margin-bottom: 75px;
+        }
+
+        .cause-detail.reverse .cause-detail-image {
+            order: 2;
+        }
+
+        .cause-detail-image img {
+            width: 100%;
+            height: 350px;
+            display: block;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cause-detail-text .number {
+            color: #a17b40;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .cause-detail-text h2 {
+            font-size: clamp(27px, 3vw, 36px);
+            margin: 16px 0;
+        }
+
+        .cause-detail-text p {
+            color: #71665c;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+        .causes-back {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: #493528;
+            color: white;
+            text-decoration: none;
+        }
+
+        .causes-back:hover {
+            background: #a17b40;
+        }
+
+        .causes-footer {
+            background: #30241d;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        @media (max-width: 700px) {
+            .causes-hero {
+                padding: 55px 20px;
+            }
+
+            .causes-list {
+                padding: 40px 20px;
+            }
+
+            .cause-detail,
+            .cause-detail.reverse {
+                grid-template-columns: 1fr;
+                gap: 22px;
+                margin-bottom: 50px;
+            }
+
+            .cause-detail.reverse .cause-detail-image {
+                order: 0;
+            }
+
+            .cause-detail-image img {
+                height: 250px;
+            }
+
+            .cause-detail-text h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body class="causes-page">
+
+    <header class="causes-hero">
+        <span class="eyebrow">THAI THANTHAI TRUST</span>
+        <h1>Our Causes</h1>
+        <p>
+            Every act of kindness creates hope.
+            Discover the causes we support and how we work
+            towards a better future for our community.
+        </p>
+
+        <a href="index.html" class="causes-back">
+            ← Back to Home
+        </a>
+    </header>
+
+    <main class="causes-list">
+
+        <section class="cause-detail">
+            <div class="cause-detail-text">
+                <span class="number">01 — FOOD SUPPORT</span>
+                <h2>Food Assistance</h2>
+                <p>
+                    We aim to support individuals and families
+                    facing food difficulties by helping meet
+                    their essential food needs with care
+                    and compassion.
+                </p>
+            </div>
+
+            <div class="cause-detail-image">
+                <img src="cause2.jpg" alt="Food assistance">
+            </div>
+        </section>
+
+        <section class="cause-detail reverse">
+            <div class="cause-detail-text">
+                <span class="number">02 — EDUCATION</span>
+                <h2>Education Support</h2>
+                <p>
+                    We believe education creates opportunities
+                    for a brighter future. Our focus is on
+                    encouraging students and supporting
+                    educational opportunities.
+                </p>
+            </div>
+
+            <div class="cause-detail-image">
+                <img src="cause1.jpg" alt="Education support">
+            </div>
+        </section>
+
+        <section class="cause-detail">
+            <div class="cause-detail-text">
+                <span class="number">03 — CARE</span>
+                <h2>Elderly Care</h2>
+                <p>
+                    We value the dignity and wellbeing of
+                    elderly people. We encourage kindness,
+                    respect and compassionate support
+                    for senior members of our community.
+                </p>
+            </div>
+
+            <div class="cause-detail-image">
+                <img src="cause3.jpg" alt="Elderly care">
+            </div>
+        </section>
+
+        <section class="cause-detail reverse">
+            <div class="cause-detail-text">
+                <span class="number">04 — COMMUNITY</span>
+                <h2>Community Welfare</h2>
+                <p>
+                    We aim to help people in need and encourage
+                    positive change through community support,
+                    cooperation and social welfare activities.
+                </p>
+            </div>
+
+            <div class="cause-detail-image">
+                <img src="cause.jpg" alt="Community welfare">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="causes-footer">
+        <p>Thai Thanthai Trust · Together for a Better Future</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Our Trust | Parents Rural Educational Development Trust</title>
+
+    <meta name="description" content="Learn about Parents Rural Educational Development Trust, its certificates, mission, community services and leadership.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body.trust-details-page {
+            margin: 0;
+            background: #ffffff;
+            color: #292f29;
+            font-family: Arial, sans-serif;
+        }
+
+        .trust-details-container {
+            width: min(1120px, 90%);
+            margin: 0 auto;
+        }
+
+        /* PAGE INTRODUCTION */
+
+        .trust-details-hero {
+            padding: 65px 20px;
+            text-align: center;
+            background: #f7f4ee;
+            border-bottom: 1px solid #e9e1d4;
+        }
+
+        .trust-details-hero .eyebrow {
+            margin: 0 0 15px;
+            color: #a47b43;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+        }
+
+        .trust-details-hero h1 {
+            max-width: 850px;
+            margin: 0 auto 18px;
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.2;
+        }
+
+        .trust-details-hero p:last-child {
+            max-width: 680px;
+            margin: 0 auto;
+            color: #68716a;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* COMMON SECTIONS */
+
+        .trust-info-section {
+            padding: 65px 0;
+        }
+
+        .trust-info-section h2,
+        .trust-leadership h2,
+        .trust-certificates h2,
+        .trust-contact-section h2 {
+            margin: 0 0 18px;
+            font-size: clamp(26px, 3vw, 35px);
+            line-height: 1.3;
+        }
+
+        .trust-info-section p,
+        .trust-leadership p,
+        .trust-certificates .section-description {
+            color: #68716a;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        /* CERTIFICATES - FIRST CONTENT SECTION */
+
+        .trust-certificates {
+            padding: 65px 0 70px;
+        }
+
+        .trust-section-label {
+            margin: 0 0 12px;
+            color: #a47b43;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .trust-certificates .section-description {
+            max-width: 720px;
+            margin-bottom: 30px;
+        }
+
+        .trust-certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            align-items: start;
+        }
+
+        .trust-certificate-item {
+            min-width: 0;
+        }
+
+        .trust-certificate-item a {
+            display: block;
+            overflow: hidden;
+            background: #f8f7f3;
+            border: 1px solid #e5dfd3;
+            border-radius: 8px;
+        }
+
+        .trust-certificate-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .trust-certificate-item a:hover img {
+            transform: scale(1.025);
+        }
+
+        .trust-certificate-item h3 {
+            margin: 15px 0 5px;
+            font-size: 17px;
+        }
+
+        .trust-certificate-item p {
+            margin: 0;
+            color: #68716a;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* OUR STORY */
+
+        .trust-story {
+            border-top: 1px solid #eee9e0;
+        }
+
+        .trust-story-content {
+            max-width: 850px;
+        }
+
+        /* AREAS OF SERVICE */
+
+        .trust-purpose-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .trust-purpose-item {
+            padding: 23px 0 5px;
+            border-top: 2px solid #d6bd94;
+        }
+
+        .trust-purpose-item h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .trust-purpose-item p {
+            margin: 0;
+        }
+
+        /* LEADERSHIP */
+
+        .trust-leadership {
+            padding: 65px 0;
+            background: #f8f7f3;
+        }
+
+        .trust-leadership-intro {
+            max-width: 750px;
+            margin-bottom: 28px;
+        }
+
+        .trust-leader-list {
+            border-top: 1px solid #e1ddd4;
+        }
+
+        .trust-leader-row {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 25px;
+            padding: 20px 0;
+            border-bottom: 1px solid #e1ddd4;
+        }
+
+        .trust-leader-row strong {
+            color: #292f29;
+            font-size: 15px;
+        }
+
+        .trust-leader-row span {
+            color: #68716a;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* PARTNERS */
+
+        .trust-partners {
+            padding: 55px 0;
+            border-bottom: 1px solid #eee9e0;
+        }
+
+        .trust-partners p {
+            max-width: 800px;
+        }
+
+        /* CONTACT */
+
+        .trust-contact-section {
+            padding: 55px 0 60px;
+            background: #292f29;
+            color: #ffffff;
+        }
+
+        .trust-contact-section h2 {
+            color: #ffffff;
+        }
+
+        .trust-contact-section p {
+            color: #e4e6e1;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .trust-contact-section a:not(.trust-back-home) {
+            color: #f0d29b;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .trust-back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 14px 22px;
+            border: 1px solid #d6bd94;
+            border-radius: 4px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.25s ease;
+        }
+
+        .trust-back-home:hover {
+            background: #a47b43;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+            .trust-details-hero {
+                padding: 50px 18px;
+            }
+
+            .trust-info-section,
+            .trust-certificates,
+            .trust-leadership {
+                padding: 45px 0;
+            }
+
+            .trust-certificate-grid,
+            .trust-purpose-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .trust-leader-row {
+                grid-template-columns: 1fr;
+                gap: 7px;
+                padding: 17px 0;
+            }
+
+            .trust-details-container {
+                width: 90%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .trust-certificate-item img {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="trust-details-page">
+
+    <!-- PAGE INTRODUCTION -->
+    <header class="trust-details-hero">
+        <div class="trust-details-container">
+
+            <p class="eyebrow">GET TO KNOW US</p>
+
+            <h1>
+                Parents Rural Educational Development Trust
+            </h1>
+
+            <p>
+                Learn about our registration, mission, community
+                service, leadership and commitment to supporting
+                people in need.
+            </p>
+
+        </div>
+    </header>
+
+    <main>
+
+       
+<section class="trust-certificates" id="certificates">
+    <div class="trust-details-container">
+        <p class="trust-section-label">OFFICIAL DOCUMENTS</p>
+        <h2>Registration & Certificates</h2>
+        <p class="section-description">
+            Explore the trust's official certificates and registration documents.
+            Open the documents below to view the details.
+        </p>
+
+        <div class="trust-certificate-grid">
+
+            
+<div class="trust-certificate-item">
+    <a href="certificate.jpg"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="trust-certificate-image-link">
+        <img src="certifiCATE.JPG.png"
+             alt="Trust Certificate 1"
+             class="trust-certificate-image">
+    </a>
+
+    <h3>Trust Certificate 1</h3>
+    <p>View the official trust certificate.</p>
+</div>
+
+
+           
+<!-- CERTIFICATE 2 - PDF DOCUMENT -->
+<div class="trust-certificate-item">
+    <div class="trust-pdf-preview">
+        <span class="trust-pdf-icon">PDF</span>
+        <h3>Trust Registration Documents</h3>
+        <p>Official documents and certificates in PDF format.</p>
+
+        <a href="certificate.ptf.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="trust-pdf-button">
+            <span>View PDF Documents</span>
+            <span aria-hidden="true">→</span>
+        </a>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+       
+<!-- OUR STORY & MISSION -->
+<section class="trust-info-section trust-story" id="our-story">
+    <div class="trust-details-container">
+        <div class="trust-story-content">
+            <p class="trust-section-label">OUR STORY</p>
+
+            <h2>Our History & Mission</h2>
+
+            <p class="trust-story-intro">
+                Building a caring community through education, support and service.
+            </p>
+
+            <p>
+                Parents Rural Educational Development Trust works towards
+                supporting rural communities through education, food assistance,
+                elderly care and community welfare activities.
+            </p>
+
+            <p>
+                Our mission is to encourage educational opportunities, support
+                people facing hardship, and promote a caring community where
+                people can access essential assistance with dignity and respect.
+            </p>
+
+            <div class="trust-mission-note">
+                <span class="trust-mission-symbol" aria-hidden="true">♥</span>
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To serve people with compassion and contribute to a
+                        stronger, more supportive community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
+<!-- OUR AREAS OF SERVICE -->
+<section class="trust-services-section" id="services">
+    <div class="trust-details-container">
+
+        <div class="trust-services-heading">
+            <p class="trust-section-label">HOW WE SERVE</p>
+            <h2>Our Areas of Service</h2>
+            <p>
+                Supporting rural communities through care, education
+                and essential assistance.
+            </p>
+        </div>
+
+        <div class="trust-services-grid">
+
+            <article class="trust-service-item">
+                <span class="trust-service-number">01</span>
+                <div class="trust-service-icon" aria-hidden="true">📚</div>
+                <h3>Education Support</h3>
+                <p>
+                    Encouraging learning opportunities and helping rural
+                    communities work towards a brighter educational future.
+                </p>
+            </article>
+
+            <article class="trust-service-item">
+                <span class="trust-service-number">02</span>
+                <div class="trust-service-icon" aria-hidden="true">♡</div>
+                <h3>Food Assistance</h3>
+                <p>
+                    Supporting individuals and families facing hardship
+                    with essential food assistance and community care.
+                </p>
+            </article>
+
+            <article class="trust-service-item">
+                <span class="trust-service-number">03</span>
+                <div class="trust-service-icon" aria-hidden="true">♥</div>
+                <h3>Elderly Care</h3>
+                <p>
+                    Promoting dignity, kindness and support for elderly
+                    people in the community.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        
+
+<div class="trust-leader-list">
+
+    <div class="trust-leader-row">
+        <div class="trust-leader-role">01</div>
+        <div>
+            <strong>Founder</strong>
+            <span>I. Balraj</span>
+        </div>
+    </div>
+
+    <div class="trust-leader-row">
+        <div class="trust-leader-role">02</div>
+        <div>
+            <strong>Treasurer</strong>
+            <span>P. Anthoniammal</span>
+        </div>
+    </div>
+
+    <div class="trust-leader-row">
+        <div class="trust-leader-role">03</div>
+        <div>
+            <strong>Secretary</strong>
+            <span>P. Kishore</span>
+        </div>
+    </div>
+
+    <div class="trust-leader-row">
+        <div class="trust-leader-role">04</div>
+        <div>
+            <strong>Members</strong>
+            <span>K. Rani, K. Aruna</span>
+        </div>
+    </div>
+
+    <div class="trust-leader-row">
+        <div class="trust-leader-role">05</div>
+        <div>
+            <strong>Advisors</strong>
+            <span>P. Prabhu, P. Renukadevi, P. Diana, P. Arulniraichelvi</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- PARTNERS & SUPPORTERS -->
+<section class="trust-partners" id="partners">
+    <div class="trust-details-container">
+
+        <div class="trust-partners-content">
+            <p class="trust-section-label">WORKING TOGETHER</p>
+
+            <h2>Our Partners & Supporters</h2>
+
+            <p class="trust-partners-intro">
+                Strong communities grow when people come together to help
+                others. Support from well-wishers and community members
+                helps us continue our social service activities.
+            </p>
+
+            <div class="trust-partner-message">
+                <span class="trust-partner-symbol" aria-hidden="true">♡</span>
+
+                <div>
+                    <h3>Every Contribution Matters</h3>
+                    <p>
+                        Every act of kindness, every helping hand and every
+                        effort towards education and community welfare can
+                        make a meaningful difference in someone's life.
+                    </p>
+                </div>
+            </div>
+
+            <p class="trust-partners-note">
+                Verified partner organizations and supporter details
+                will be shared here when officially confirmed.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+        
+                
+<!-- CONTACT OUR TRUST -->
+<section class="trust-contact-section" id="contact">
+    <div class="trust-details-container">
+
+        <p class="trust-section-label">GET IN TOUCH</p>
+        <h2>Contact Our Trust</h2>
+
+        <p class="trust-contact-intro">
+            Have a question or want to learn more about our community
+            initiatives? Get in touch with us.
+        </p>
+
+        <div class="trust-contact-grid">
+
+            <div class="trust-contact-item">
+                <span class="trust-contact-icon" aria-hidden="true">⌖</span>
+                <h3>Our Address</h3>
+                <p>
+                    6/210, Pudhiya Colony, Kamaraj Nagar,<br>
+                    Sendarapatti S.O., Salem,<br>
+                    Tamil Nadu – 636110
+                </p>
+            </div>
+
+            <div class="trust-contact-item">
+                <span class="trust-contact-icon" aria-hidden="true">☎</span>
+                <h3>Call Us</h3>
+                <p>Speak to us for trust-related enquiries.</p>
+                <a href="tel:+918124423122">+91 81244 23122</a>
+            </div>
+
+            <div class="trust-contact-item">
+                <span class="trust-contact-icon" aria-hidden="true">✉</span>
+                <h3>Email Us</h3>
+                <p>Send your questions and enquiries by email.</p>
+                <a href="mailto:predtrust1971@gmail.com">
+                    predtrust1971@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="trust-back-home">
+            <span aria-hidden="true">←</span> Back to Home
+        </a>
+
+    </div>
+</section>
+
+    </main>
+
+</body>
+</html>
