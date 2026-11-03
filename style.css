@@ -5187,3 +5187,98 @@ html {
         word-break: normal;
     }
 }
+/* =========================================
+   MOBILE SCREEN FIX
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .container,
+    .hero-content {
+        width: 92%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(28px, 8vw, 38px);
+        line-height: 1.35;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .whatsapp-float {
+        position: fixed !important;
+        right: 16px !important;
+        bottom: 20px !important;
+        width: 54px;
+        height: 54px;
+        z-index: 99999;
+    }
+}
+/* =========================================
+   FINAL FIX - MOBILE HERO HEADING ONLY
+========================================= */
+
+@media screen and (max-width: 520px) {
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 34px !important;
+        line-height: 1.8 !important;
+        letter-spacing: 0 !important;
+        word-spacing: normal;
+        overflow-wrap: normal;
+        word-break: normal;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        display: block;
+        line-height: 1.8 !important;
+        margin-top: 2px;
+    }
+
+}/* =========================================
+   FINAL FIX - MOBILE HERO HEADING ONLY
+========================================= */
+
+@media screen and (max-width: 520px) {
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 34px !important;
+        line-height: 1.8 !important;
+        letter-spacing: 0 !important;
+        word-spacing: normal;
+        overflow-wrap: normal;
+        word-break: normal;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        display: block;
+        line-height: 1.8 !important;
+        margin-top: 2px;
+    }
+
+}
