@@ -310,19 +310,7 @@ a {
     object-position: center;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(18, 13, 10, 0.50) 0%,
-rgba(18, 13, 10, 0.30) 42%,
-rgba(18, 13, 10, 0.08) 100%
-        );
-}
 
 .hero-content {
     position: relative;
@@ -558,14 +546,7 @@ rgba(18, 13, 10, 0.08) 100%
 
 @media (max-width: 520px) {
 
-    .hero-overlay {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(18, 13, 10, 0.86),
-                rgba(18, 13, 10, 0.55)
-            );
-    }
+    
 
     .hero-content {
         padding-top: 55px;
@@ -3754,129 +3735,7 @@ html {
     background: #30251d;
 }
 
-.hero-slides,
-.hero-slide,
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
 
-.hero-slides {
-    z-index: -2;
-}
-
-.hero-slide {
-    object-fit: cover;
-    object-position: center;
-    opacity: 0;
-    transform: scale(1.04);
-    transition: opacity 1.2s ease, transform 6s ease;
-}
-
-.hero-slide.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.hero-overlay {
-    z-index: -1;
-    background: linear-gradient(
-        90deg,
-        rgba(24, 21, 17, 0.82) 0%,
-        rgba(24, 21, 17, 0.57) 48%,
-        rgba(24, 21, 17, 0.12) 100%
-    );
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    width: min(760px, 90%);
-    margin-left: clamp(24px, 8vw, 120px);
-    padding: 90px 0;
-    color: #fff;
-}
-
-.hero-tag {
-    margin: 0 0 22px;
-    color: #f0d29b;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.hero-content h1 {
-    max-width: 720px;
-    margin: 0;
-    font-size: clamp(42px, 6vw, 76px);
-    line-height: 1.1;
-    letter-spacing: -1.8px;
-    font-weight: 700;
-}
-
-.hero-content h1 span {
-    display: block;
-    color: #f0d29b;
-}
-
-.hero-description {
-    max-width: 540px;
-    margin: 24px 0 32px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-.hero-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 18px;
-    padding: 15px 25px;
-    background: #d6b477;
-    color: #241b14;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 4px;
-    transition: background 0.25s ease, transform 0.25s ease;
-}
-
-.hero-btn:hover {
-    background: #f0d29b;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .hero {
-        min-height: 78vh;
-    }
-
-    .hero-overlay {
-        background: linear-gradient(
-            90deg,
-            rgba(24, 21, 17, 0.78),
-            rgba(24, 21, 17, 0.42)
-        );
-    }
-
-    .hero-content {
-        width: 88%;
-        margin-left: 6%;
-        padding: 70px 0;
-    }
-
-    .hero-content h1 {
-        font-size: clamp(38px, 10vw, 56px);
-        letter-spacing: -1px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-}
 
 /* =====================================
    PROFESSIONAL ABOUT SECTION
@@ -5298,5 +5157,203 @@ img {
         height: 320px;
         object-fit: cover;
         display: block;
+    }
+}
+.hero-logo {
+    width: 125px;
+    margin: 0 auto 18px;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* HEADER LOGO DESIGN */
+.trust-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.trust-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.trust-logo-text {
+    display: flex;
+    flex-direction: column;
+}
+.trust-logo-text small {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+/* HERO BIBLE VERSE DESIGN */
+.hero-bible-verse {
+    max-width: 750px;
+    margin: 25px 0;
+    padding: 18px 22px;
+    background: transparent;
+    border-left: 4px solid #c9a45c;
+    border-radius: 6px;
+}
+
+.hero-bible-verse p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.hero-bible-verse span {
+    color: #e1c98f;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 700px) {
+    .hero-bible-verse {
+        margin: 18px 0;
+        padding: 14px;
+    }
+
+    .hero-bible-verse p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+}
+/* HEADER LOGO AND TAGLINE FIX */
+.trust-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.trust-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.trust-logo-text {
+    border-left: 1px solid #d8d8d8;
+    padding-left: 12px;
+}
+
+.trust-logo-text small {
+    display: block;
+    color: #555;
+    font-size: 11px;
+    line-height: 1.6;
+    white-space: normal;
+}
+
+/* REMOVE BLACK DONATE BOX ON MOBILE */
+@media (max-width: 700px) {
+    .header-container > .donate-btn {
+        display: none;
+    }
+}
+
+/* =================================
+   HERO - FINAL UNIFORM WHITE SHADE
+================================= */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Background images */
+.hero-slides {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* ONE UNIFORM WHITE SHADE */
+.hero-slides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.48);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Text above overlay */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: min(760px, 90%);
+    margin-left: clamp(24px, 8vw, 120px);
+    padding: 75px 0;
+    color: #222222;
+}
+
+.hero-tag {
+    color: #8a6a37;
+}
+
+.hero-content h1 {
+    color: #222222;
+}
+
+.hero-content h1 span {
+    color: #9a7540;
+}
+
+.hero-description,
+.hero-bible-verse p {
+    color: #333333;
+}
+
+.hero-bible-verse {
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        width: 88%;
+        margin: 0 auto;
+        padding: 45px 0 55px;
     }
 }
